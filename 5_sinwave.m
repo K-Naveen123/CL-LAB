@@ -1,0 +1,10 @@
+frequency=5;
+amplitude=1;
+num_sample=1000;
+t=linespace(0,1,num_sample);
+sinwave=amplitude*sin(2*pi*frequency*t);
+plt.plot(t,sinwave);
+plt.xlabel("time");
+plt.ylabel("amplitude");
+plt.title("sinwave");
+plt.show();
